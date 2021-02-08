@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const TemplateBlock = styled.div`
     width: 100%;
+    height: 100%;
     position: relative;
     background: #f5f6f5;
 
@@ -12,6 +13,7 @@ const TemplateBlock = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 `;
 
 const Template = ({ children }) => {

@@ -1,9 +1,9 @@
 import React from 'react';
 import {createGlobalStyle} from 'styled-components';
-import Template from './components/Template';
-import Header from './components/Header';
-import Shoes from './components/Shoes';
-import Footer from './components/Footer';
+import Template from '../components/Template';
+import Header from '../components/Header';
+import Shoes from '../home-components/Shoes';
+import Footer from '../home-components/Footer';
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -11,7 +11,8 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const Home =({childreb}) => {
+const Home =({children}) => {
+
   return (
     <>
       <GlobalStyle />
@@ -19,7 +20,6 @@ const Home =({childreb}) => {
         <Header>
         </Header>
         <Shoes></Shoes>
-
         <Footer></Footer>
       </Template>
     </>

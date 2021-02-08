@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import shoe_img from '../images/shoe_img.png';
 
 const ShoesBlock = styled.div`
-
     margin: 100px;
     display: flex;
     flex-direction: column;

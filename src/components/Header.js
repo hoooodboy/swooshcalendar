@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../images/nike-logo-2.png'
+import SliderMenu from '../home-components/SliderMenu';
 
 
 const HeaderBox = styled.div`
@@ -19,24 +20,6 @@ const Nothing = styled.div`
     margin-left: 5vw;
 `;
 
-const Hamburger = styled.div`
-    width: 25px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    margin-right: 5vw;
-`;
-
-const Line = styled.div`
-    width: 100%;
-    border-top: 2px solid #000;
-    border-radius: 12px;
-    background-color: #000;
-`;
-
 const Logo = styled.div`
     background-image: url(${logo});
     width: 90px;
@@ -49,17 +32,15 @@ const Logo = styled.div`
 `;
 
 
-const Header = ({children}) => {
+const Header = () => {
     return (
-        <HeaderBox>
-            <Nothing />
-            <Logo />
-            <Hamburger>
-                <Line />
-                <Line />
-                <Line />
-            </Hamburger>
-        </HeaderBox>
+        <>
+            <HeaderBox>
+                <Nothing />
+                <Logo />
+                <SliderMenu/>
+            </HeaderBox>
+        </>
     );
 };
 
