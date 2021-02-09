@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Clock from 'react-live-clock';
 
 const TimeBlock = styled.div`
     border-top: 1px solid #666; 
@@ -12,6 +13,20 @@ const TimeBlock = styled.div`
     font-size: 22px;
     font-weight: 600;
     padding: 20px 0;
+`;
+
+const ClockBlock = styled.div`
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 8vw;
+    color: #999;
+    font-weight: 300;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 20px;
 `;
 
 const today = new Date();
@@ -28,7 +43,11 @@ const Header = () => {
         <>
             <TimeBlock>
                 {dateString}
+                <ClockBlock>
+                    <Clock format={'HH:mm:ss'} ticking />
+                </ClockBlock>
             </TimeBlock>
+
         </>
     );
 };

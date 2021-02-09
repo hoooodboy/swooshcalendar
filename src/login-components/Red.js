@@ -85,7 +85,7 @@ const ButtonWrapper = styled.div`
     font-size: 12px;
 `;
 
-const KakaoLogin = styled.div`
+const KakaoLogin = styled.button`
     width: 45vw;
     height: 3vh;
     border-radius: 3px;
@@ -97,6 +97,7 @@ const KakaoLogin = styled.div`
     margin-top: 2vh;
     background-color: #FAED5C;
     font-size: 12px;
+    border: none;
     &:active{
         background-color: #d9ce54;
     }
@@ -107,7 +108,7 @@ const Nothing = styled.div`
     height: 17px;
 `;
 
-const LoginButton = styled.div`
+const LoginButton = styled.button`
     width: 45vw;
     height: 3vh;
     border-radius: 3px;
@@ -120,9 +121,16 @@ const LoginButton = styled.div`
     background-color: #1a1919;
     color: #fff;
     font-size: 12px;
-
+    border: none;
 `;
 
+const Join = styled.div`
+    color: #474747;
+    font-size: 10px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-top: 2vh;
+`;
 
 const Red = () => {
     return (
@@ -149,9 +157,10 @@ const Red = () => {
                     카카오계정 로그인 
                     <Nothing/>
                 </KakaoLogin>
-               
             </ButtonWrapper>
-
+            <Join>
+                회원가입
+            </Join>
         </ProfileBlock>
     );
 }
