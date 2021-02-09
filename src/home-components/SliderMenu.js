@@ -148,11 +148,12 @@ const SliderMenu = () => {
         <SliderMenuSpot open={open}>
             <SliderMenuBlockRight>
                 <MenubarTitle>
-                    <MenubarContent style={{fontWeight:700}}>런칭 캘린더</MenubarContent>
+                    <Link style={{textDecoration: 'none'}}>
+                        <MenubarContent style={{fontWeight:700}}>런칭 캘린더</MenubarContent>
+                    </Link>
                     <Link to="/today" style={{textDecoration: 'none', fontWeight:400}}>
                         <MenubarContent>투데이</MenubarContent>
                     </Link>
-                    <MenubarContent>컬처</MenubarContent>
                     <Link to="/event" style={{textDecoration: 'none', fontWeight:400}}>
                         <MenubarContent>이벤트</MenubarContent>
                     </Link>

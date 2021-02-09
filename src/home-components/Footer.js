@@ -80,7 +80,7 @@ const Arrow = styled.div`
     background-repeat: no-repeat;
     background-position: center center;
     ${props => props.open && css`
-        transform: translate(-50%, 50%) rotate(90deg);
+        transform: rotate(180deg);
     `}
 `;
 
@@ -146,7 +146,7 @@ const Footer = () => {
                 </FooterNavigator>
                 <BuisnessInfoBlock open={open} onClick={onToggle} >
                     <BuisnessInfo>사업자정보</BuisnessInfo>
-                    <Arrow/>
+                    <Arrow open={open}/>
                 </BuisnessInfoBlock>
             </Wrapper>
             </FooterBlockWrapper>

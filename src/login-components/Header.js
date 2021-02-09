@@ -6,13 +6,13 @@ import BackArrow from '../images/back.png';
 
 const HeaderBlock = styled.div`
     width: 100%;
-    background: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    position: absolute;
     height: 60px;
     top: 0;
+    background-color: none;
 `;
 
 const Back = styled.div`
@@ -25,25 +25,6 @@ const Back = styled.div`
     background-size: 100% 100%;
 `;
 
-
-const Today = styled.div`
-    width: 90px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration-line: none;   
-    font-size: 24px;
-    font-weight: 600;
-`;
-
-const Nothing = styled.div`
-    width: 25px;
-    height: 20px;
-    margin-Right: 5vw;
-`;
-
-
 const Header = () => {
     return (
         <>
@@ -51,12 +32,7 @@ const Header = () => {
                 <Link to="/">
                     <Back/>
                 </Link>
-                <Link to="/" style={{ textDecoration: 'none', color: '#000' }}>
-                    <Today>
-                        이벤트
-                    </Today>
-                </Link>
-                <Nothing/>
+
             </HeaderBlock>
         </>
     );
