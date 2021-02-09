@@ -16,8 +16,7 @@ const TimeBlock = styled.div`
 `;
 
 const ClockBlock = styled.div`
-    width: 100%;
-    box-sizing: border-box;
+    width: 90%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -26,6 +25,7 @@ const ClockBlock = styled.div`
     font-weight: 300;
     font-size: 15px;
     position: absolute;
+    margin: 0 auto;
     margin-top: 20px;
 `;
 
