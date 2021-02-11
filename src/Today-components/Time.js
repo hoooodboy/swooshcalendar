@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Clock from 'react-live-clock';
 
 const TimeBlock = styled.div`
-    border-top: 1px solid #666; 
+    border-top: 1px solid #777; 
     width: 100%;
     display: flex;
     background: #fff;
@@ -11,8 +11,9 @@ const TimeBlock = styled.div`
     align-items: center;
     justify-content: space-between;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 400;
     padding: 20px 0;
+    color: #777;
 `;
 
 const ClockBlock = styled.div`
@@ -26,7 +27,7 @@ const ClockBlock = styled.div`
     font-size: 15px;
     position: absolute;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 24px;
 `;
 
 const today = new Date();

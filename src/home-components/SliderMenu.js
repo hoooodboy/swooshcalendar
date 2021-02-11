@@ -159,8 +159,8 @@ const SliderMenu = () => {
                     </Link>
                 </MenubarTitle>
                 <Contact>
-                    <a href="https://www.instagram.com/031_hood_boy"><Instagram/></a>          
-                    <a href="https://www.facebook.com/profile.php?id=100017164261384"><Facebook/></a>          
+                    <a href="https://www.instagram.com/"><Instagram/></a>          
+                    <a href="https://www.facebook.com/"><Facebook/></a>          
                     <Phone/>
                     <Email/>
                 </Contact>

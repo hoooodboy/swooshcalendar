@@ -51,18 +51,24 @@ const ShoeImg = styled.div`
 
 
 
-const Shoes = () =>{
+function Shoes(title, theme, image, href, calendar) {
     return (
-        <ShoesBlock>
-            <Date>
-                2 / 1
-            </Date>
-            <ShoeImg />
-            <Model>
-                Nike x Travis Scott SB Dunk Low
-            </Model>
-        </ShoesBlock>
+        <a href={href} style={{textDecoration: 'none'}}>
+            <ShoesBlock>
+                <Date>
+                    {calendar.slice(9, 12)}
+                </Date>
+                <ShoeImg>
+                    <img src={image} alt={title} title={title} />
+                </ShoeImg>
+                <Model>
+                    {title}
+                </Model>
+            </ShoesBlock>
+        </a>
     );
 };
+
+
 
 export default Shoes;

@@ -5,7 +5,7 @@ const TemplateBlock = styled.div`
     width: 100%;
     height: 100%;
     position: relative;
-    background: #f5f6f5;
+    background: #f0f0f0;
 
     margin: 0 auto; 
 
