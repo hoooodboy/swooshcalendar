@@ -52,6 +52,14 @@ const ShoeImg = styled.img`
 
 `;
 
+const Wrapper = styled.div`
+        width: 100%auto;
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+`;
+
 function Shoes() {
     const [shoes, setShoes] = useState(null);
     const [loading, setLoading] = useState(false);
@@ -73,14 +81,20 @@ function Shoes() {
             fetchShoes();
     }, []);
 
-    if (loading) return <div>로딩중..</div>;
-    if (error) return <div>에러가 발생했습니다</div>;
+    const nike = "https://www.nike.com"
+
+    if (loading) return(
+        <Wrapper>
+            Loading...
+        </Wrapper>
+    );
+    if (error) return <Wrapper>Error!</Wrapper>;
     if (!shoes) return null;
     return (
  
           <>
         {shoes.map(shoe => (
-          <a href={shoe.href} key={shoe.id}  style={{textDecoration:'none'}}>
+          <a href={nike+shoe.href} key={shoe.id}  style={{textDecoration:'none'}}>
             <ShoesBlock>
                 <Date>
                     {shoe.calendar[0].split(' : ')[1].split(' ')[0]}
